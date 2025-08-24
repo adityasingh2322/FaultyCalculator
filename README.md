@@ -35,7 +35,7 @@ Built for practice and entertainment, it also includes keyboard interaction and 
 ---
 
 ## 📸 Demo Screenshot
-*(Add a screenshot of your calculator here when available)*
+![Calculator Screenshot](./Screenshot%202025-08-24%20124449.png)
 
 ---
 
