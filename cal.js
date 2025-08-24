@@ -24,8 +24,10 @@ function cal()
     if(dec <= 0.7)
     {
         document.getElementById("output").innerHTML = eval(str)
+        document.getElementById("output").style.color = "red";
         return
     }
+    document.getElementById("output").style.color = "black";
     document.getElementById("output").innerHTML = eval(i)
 }
 function clean()
