@@ -1,0 +1,86 @@
+body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        .main{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 40vw;
+            background-color: aquamarine;
+            width: 30vw;
+            margin: 2px auto;
+            border-radius: 50px;
+        }
+        .container{
+            border: 2px solid black;
+            height: 30vw;
+            width: 20vw;
+            background-color: rgba(137, 125, 125, 0.959);
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            align-items: center;
+        }
+        .output{
+            height: 10vh;
+            width: 90%;
+            border: 2px solid black;
+            border-radius: 2vw;
+            margin: 24px;
+            background-color: whitesmoke;
+            text-align: center;
+            padding: 5px 24px;
+            box-sizing: border-box;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            font-size: 1.5em ;
+            overflow: hidden;
+        }
+        .buttons{
+            display: flex;
+            /* border: 1px solid black; */
+            width: 90%;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            /* gap: 30px; */
+        }
+        .btn{
+            width: 4vw;
+            height: 4vw;
+            font-size: 2em;
+            margin: 2px;
+            border-radius: 20px;
+            background-color: black;
+            color: white;
+        }
+        .clear{
+            background-color: orange;
+        }
+        @media only screen and (max-width: 600px){
+            .main{
+                width: 100vw;
+                height: 80vh;
+            }
+            .container{
+                width: 70vw;
+                height: 55vh;
+            }
+            .output{
+                height: 8vh;
+            }
+            .btn{
+                width: 12vw;
+                height: 15vw;
+                border-radius: 5px;
+            }
+            .buttons{
+                width: 90%;
+                gap: 10px;
+            }
+        }

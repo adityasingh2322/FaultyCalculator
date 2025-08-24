@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <div class="main">
+            <h1>Let's Caculate</h1>
+            <div class="container">
+                <div class="output" id="output"></div>
+                <div class="buttons">
+                    <button class="btn "onclick="show(1)">1</button>
+                    <button class="btn" onclick="show(2)" >2</button>
+                    <button class="btn" onclick="show(3)" >3</button>
+                    <button class="btn" onclick="show('+')" >+</button>
+                    <button class="btn" onclick="show(4)" >4</button>
+                    <button class="btn" onclick="show(5)" >5</button>
+                    <button class="btn" onclick="show(6)" >6</button>
+                    <button class="btn" onclick="show('-')" >-</button>
+                    <button class="btn" onclick="show(7)" >7</button>
+                    <button class="btn" onclick="show(8)" >8</button>
+                    <button class="btn" onclick="show(9)" >9</button>
+                    <button class="btn" onclick="show('*')">*</button>
+                    <button class="btn" onclick="show(0)" >0</button>
+                    <button class="btn clear" onclick="clean()">C</button>
+                    <button class="btn equal" onclick="cal()">=</button>
+                    <button class="btn" onclick="show('/')">/</button>
+            </div>
+         </div>
+       <script src="cal.js"></script>
+        </body>
+</html>
