@@ -1,11 +1,17 @@
 function show(val)
 {
+    if(state == "output"){
+
+        document.getElementById("output").innerHTML = val
+        state = "input"
+        return
+    }
     document.getElementById("output").innerHTML += val
 
 }
 function cal()
 {
-    let i = document.getElementById("output").innerHTML;
+    let i = document.getElementById("output").innerHTML.slice(0,-1);
     let dec = Math.random();
     let str = ""
     let obj = {
@@ -23,7 +29,7 @@ function cal()
     }
     if(dec <= 0.7)
     {
-        document.getElementById("output").innerHTML = eval(str)
+        document.getElementById("output").innerHTML += eval(str)
         document.getElementById("output").style.color = "red";
         return
     }
@@ -34,9 +40,12 @@ function clean()
 {
     document.getElementById("output").innerHTML = "";
 }
+var state = "input"
 addEventListener( "keydown" , event =>{
     if(event.key === "Enter" || event.key === '=' ){
+        show("=")
         cal()
+        state = "output"
     }    
     else if(event.code.startsWith("Numpad") || event.code.startsWith("Digit"))
     {
